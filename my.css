@@ -939,7 +939,7 @@ img{
         height: 68vh;
         position: absolute;
         left: 0%;
-        top: 310%;
+        top: 325%;
 
     }
 
@@ -1012,7 +1012,7 @@ img{
         height: 32vh;
         position: absolute;
         left: 6%;
-        top: 495%;
+        top: 500%;
     }
     
     .Repu-heading{
@@ -1035,7 +1035,7 @@ img{
         height: 66%;
         position: absolute;
         left: 5%;
-        top: 543%;
+        top: 548%;
     }
 
     #map{
@@ -1046,7 +1046,7 @@ img{
     #send-message{
        height: 56%;
         width: 87%;
-        top: 610%;
+        top: 615%;
         left: 6%;
     }
 
@@ -1068,7 +1068,7 @@ img{
         width: 100%;
         height: 32vh;
         position: absolute;
-        top: 685%;
+        top: 690%;
         left: 0%;
         bottom: 0%;
     }
