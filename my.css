@@ -939,7 +939,7 @@ img{
         height: 68vh;
         position: absolute;
         left: 0%;
-        top: 306%;
+        top: 335%;
 
     }
 
@@ -971,7 +971,7 @@ img{
         width: 90%;
         position: absolute;
         left: 5vw;
-        top: 355%;
+        top: 390%;
     }
 
     .s-c-o{
@@ -1012,7 +1012,7 @@ img{
         height: 32vh;
         position: absolute;
         left: 6%;
-        top: 446%;
+        top: 500%;
     }
     
     .Repu-heading{
@@ -1035,7 +1035,7 @@ img{
         height: 66%;
         position: absolute;
         left: 5%;
-        top: 490%;
+        top: 553%;
     }
 
     #map{
@@ -1046,7 +1046,7 @@ img{
     #send-message{
        height: 56%;
         width: 87%;
-        top: 553%;
+        top: 630%;
         left: 6%;
     }
 
@@ -1068,7 +1068,7 @@ img{
         width: 100%;
         height: 32vh;
         position: absolute;
-        top: 625%;
+        top: 700%;
         left: 0%;
         bottom: 0%;
     }
