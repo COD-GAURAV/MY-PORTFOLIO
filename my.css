@@ -1117,7 +1117,7 @@ img{
         top: 5%;
         right: 0%;
         font-size: 3.5vw;
-        display: flex;
+        display: none;
         flex-direction: column;
     } 
     #cross{
@@ -1126,8 +1126,10 @@ img{
         margin-top: 20px;
         right: 4.5%;
         font-size: 25px;
-        
-      
+    }
+
+    .fa-xmark{
+        color: white;
     }
  }
 
