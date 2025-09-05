@@ -23,13 +23,16 @@
         
         <div id="menu-option">
           <i id="bar" class="fa-solid fa-bars"></i>
+          <i id="cross" class="fa-solid fa-xmark"></i>
 
           <div id="option">
-            <i id="cross" class="fa-solid fa-xmark"></i>
-            <a id="mehome" >HOME</a>
-            <a id="meabout" >ABOUT</a>
-            <a id="meskill">SKILL</a>
-            <a id="mecontact">CONTACT</a>
+            <a id="mehome" class="tag">HOME</a>
+            <a id="meabout" class="tag">ABOUT</a>
+            <a id="meskill" class="tag">SKILL</a>
+            <a id="mecontact" class="tag">CONTACT</a>
+            <div id="box-sun" class="box"><a id="sun"><i class="fa-regular fa-sun"></i></i></a></div>
+            <div id="box-moon" class="box"><a id="moon"><i class="fa-regular fa-moon" id="fa-moon"></i></a></div>
+
           </div>
         </div>
         <div id="content">
@@ -254,8 +257,7 @@
     menuBar.addEventListener("click",function(e){
       document.getElementById("option").style.display = `flex`
       document.getElementById("option").style.position = `fixed`
-      project.style.display = "none"
-      document.getElementById("content").style.display = `none`
+      menuBar.style.display = `none`
       cross.style.display = `flex`
     })
 
@@ -263,16 +265,14 @@
     cross.addEventListener("click",function(e){
       document.getElementById("option").style.display = `none`
       document.getElementById("option").style.position = `none`
-      project.style.display = "flex"
-      document.getElementById("content").style.display = `flex`
+      menuBar.style.display = `flex`
       cross.style.display = `none`
     })
 
     function closedAndOpen(){
       document.getElementById("option").style.display = `none`
       document.getElementById("option").style.position = `none`
-      project.style.display = "flex"
-      document.getElementById("content").style.display = `flex`
+      menuBar.style.display = `flex`
       cross.style.display = `none`
     }
 
@@ -389,6 +389,38 @@
       console.log(backgroundIndex)
     },3000)
 
+    const sun = document.getElementById("box-sun")
+    const moon = document.getElementById("box-moon")
+    const tag = document.querySelectorAll("tag")
+    const fa_moon = document.getElementById("fa-moon")
+
+
+    sun.addEventListener("click",(e)=>{
+      document.body.classList.add("dark")
+      document.body.classList.remove("light")
+      moon.style.display = "flex"
+      sun.style.display = "none"
+      home.style.color = `white`
+      about.style.color = `white`
+      skill.style.color = `white`
+      contact.style.color = `white`
+      cross.style.color = `white`
+      fa_moon.style.color = `white`
+      document.getElementById("option").style.backgroundColor = `black`
+    })
+
+    moon.addEventListener("click",(e)=>{
+      document.body.classList.add("light")
+      document.body.classList.remove("dark")
+      sun.style.display = "flex"
+      moon.style.display = "none"
+      home.style.color = `black`
+      about.style.color = `black`
+      skill.style.color = `black`
+      contact.style.color = `black`
+      cross.style.color = `black`
+      document.getElementById("option").style.backgroundColor = `white`
+    })
 
     </script>
 </html>

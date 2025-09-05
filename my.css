@@ -8,7 +8,10 @@
 html,body{
     height: 100%;
     width: 100%;
-    overflow-x: auto;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 a{
@@ -22,7 +25,7 @@ a{
 
 .container{
     height: 100vh;
-    width: 95vw;
+    width: 100vw;
 }
 
 .photo{
@@ -66,7 +69,7 @@ a{
    font-size: 4vh;
    cursor: pointer;
    display: none;
-   color: white;
+   color: black;
 }
 
 
@@ -88,46 +91,61 @@ a{
 }
 
 #menu-option{
-    position: fixed;
-    top: 0%;
-    right: 1.2%;
-    height: 100vh;
-    width: 66vw;
+  position: fixed;
+  top: 3%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  font-size: 1vw;
 }
 
 
 
 #option{
-    height: 100%;
-    width: 70%;
+    margin-top: 5vh;
+    margin-left: 52vw;
+    height: 5%;
+    width: 35%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15%;
-    background-color: #757575;
+    gap: 10%;
+    background-color:white;
+    display: none;
+    border-radius: 10px;
+}
+
+
+
+.box{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+#box-moon{
     display: none;
 }
 
-#mehome{
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
-}
-#meabout{
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
-}
-#meskill{
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
-}
-#mecontact{
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
+
+.tag{
+    color: black;
+    cursor: pointer;  
 }
 
 .name{
@@ -154,10 +172,11 @@ a{
 
 .down:hover{
     background-color: lightsalmon;
+    transition: 0.1s 0.1s ease-in-out;
 }
 
 #my-gallery{
-    height: 200vh;
+    height: 151vh;
     width: 50vw;
     /* background-color: aqua; */
     position: absolute;
@@ -211,7 +230,7 @@ a{
     width: 20vw;
     /* background-color: rgb(51, 8, 131); */
     position: absolute;
-    top: 38%;
+    top: 48%;
     left: 6%;
     background-image: url(photo-4.jpg);
     background-size: cover;
@@ -223,7 +242,7 @@ a{
     width: 23vw;
     /* background-color: burlywood; */
     position: absolute;
-    top: 38%;
+    top: 48%;
     right: 6%;
     background-image: url("photo-5.jpg");
     background-size: cover;
@@ -505,7 +524,7 @@ img{
 #footer{
 
     height: 35vh;
-    width: 66.3vw;
+    width: 67vw;
     background-color: #f1f1f1;
     position: absolute;
     top: 580%;
@@ -832,8 +851,8 @@ img{
     .menu-bar{
         width: 100vw;
         height: 10vh;
-        /* position: absolute; */
-        background-color: rgb(53, 66, 250);
+        position: fixed;
+        background-color: rgb(61, 68, 173);
         top: 0%;
        
         left: 0vw;
@@ -841,7 +860,7 @@ img{
         justify-content: center;
 
         align-items: center;
-
+        z-index: 1000;
        
 
     }
@@ -1078,26 +1097,20 @@ img{
     }
 
     #menu-option{
-        height: 100vh;
+        
+        height: 0vh;
         /* width: 414.4px; */
-        position: absolute;
-        top: 0%;
-        right: 0%;
-    }
-
-    /* #option{
-        height: 100vh;
-        width: 100vw;
-        position: absolute;
+        position: fixed;
         top: 0%;
         right: 0%;
         
-    } */
+    }
 
     #cross{
         position: absolute;
-        top: 3%;
-        left: 87%;
+        top: 2%;
+        margin-top: 20px;
+        right: 4.5%;
         font-size: 25px;
         
       
