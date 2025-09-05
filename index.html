@@ -422,5 +422,46 @@
       document.getElementById("option").style.backgroundColor = `white`
     })
 
+    window.addEventListener("resize",(e)=>{
+      if(window.innerWidth < 750){
+        home.addEventListener("click",function(e){
+      closedAndOpen()
+      window.scrollTo({
+        top:0,
+        left:0,
+        behavior:"smooth"
+      })
+    })
+
+    about.addEventListener("click",function(e){
+      closedAndOpen()
+      window.scrollTo({
+        top:2488,
+        left:0,
+        behavior:"smooth"
+      })
+      
+    })
+
+    skill.addEventListener("click",function(e){
+      closedAndOpen()
+      window.scrollTo({
+        top:3029,
+        left:0,
+        behavior:"smooth"
+      })
+    })
+
+    contact.addEventListener("click",function(e){
+      closedAndOpen()
+      window.scrollTo({
+        top:4208,
+        left:0,
+        behavior:"smooth"
+      })
+    })
+      }
+    })
+
     </script>
 </html>

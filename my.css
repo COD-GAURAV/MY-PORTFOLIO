@@ -911,24 +911,26 @@ img{
     }
 
     .gallery{
-        font-size: 4vh;
-       margin-left: 4vw;
+        font-size: 3vh;
+       margin-left: 35%;
 
     }
 
     .photo-1{
-        height: 59vh;
+        height: 65vh;
+        width: 70%;
         position: absolute;
-        left: 3%;
+        left: 13%;
         top:3% ;
     }
 
     .photo-2{
         /* width: 50%;; */
-        height: 59vh;
+       height: 65vh;
+        width: 70%;
         position: absolute;
-        left: 3%;
-        top:33% ;
+         left: 13%;
+        top: 48%;
     }
 
     .photo-3{
@@ -937,19 +939,21 @@ img{
 
     .photo-4{
         /* width: 50%;; */
-        height: 59vh;
+        height: 65vh;
+        width: 70%;
         position: absolute;
-        left: 3%;
-        top:63% ;
+         left: 13%;
+        top:93% ;
 
     }
 
     .photo-5{
        /* width: 50%; */
-        height: 59vh;
+       height: 65vh;
+        width: 70%;
         position: absolute;
-        left: 3%;
-        top:93% ;
+         left: 13%;
+        top:138% ;
     }
 
     #about{
@@ -1106,6 +1110,16 @@ img{
         
     }
 
+     #option{
+        height: 40vh;
+        width: 100vw;
+        position: absolute;
+        top: 5%;
+        right: 0%;
+        font-size: 3.5vw;
+        display: flex;
+        flex-direction: column;
+    } 
     #cross{
         position: absolute;
         top: 2%;
