@@ -830,7 +830,7 @@ img{
 
 
  
- @media(max-width:1024px){
+ @media(max-width:480px){
     body{
         height: 100vh;
         border-style: 100vw;
@@ -912,12 +912,12 @@ img{
 
     .gallery{
         font-size: 3vh;
-       margin-left: 35%;
+       margin-left: 31%;
 
     }
 
     .photo-1{
-        height: 65vh;
+        height: 43vh;
         width: 70%;
         position: absolute;
         left: 13%;
@@ -926,11 +926,11 @@ img{
 
     .photo-2{
         /* width: 50%;; */
-       height: 65vh;
+        height: 43vh;
         width: 70%;
         position: absolute;
          left: 13%;
-        top: 48%;
+        top: 33%;
     }
 
     .photo-3{
@@ -939,30 +939,30 @@ img{
 
     .photo-4{
         /* width: 50%;; */
-        height: 65vh;
+         height: 43vh;
         width: 70%;
         position: absolute;
          left: 13%;
-        top:93% ;
+        top:63% ;
 
     }
 
     .photo-5{
        /* width: 50%; */
-       height: 65vh;
+       height: 50vh;
         width: 70%;
         position: absolute;
          left: 13%;
-        top:138% ;
+        top:93% ;
     }
 
     #about{
         
-        width: 100%;
+         height: 43vh;
         height: 68vh;
         position: absolute;
         left: 0%;
-        top: 335%;
+        top: 255%;
 
     }
 
@@ -994,7 +994,7 @@ img{
         width: 90%;
         position: absolute;
         left: 5vw;
-        top: 405%;
+        top: 310%;
     }
 
     .s-c-o{
@@ -1035,7 +1035,7 @@ img{
         height: 32vh;
         position: absolute;
         left: 6%;
-        top: 510%;
+        top: 405%;
     }
     
     .Repu-heading{
@@ -1058,7 +1058,7 @@ img{
         height: 66%;
         position: absolute;
         left: 5%;
-        top: 558%;
+        top: 453%;
     }
 
     #map{
@@ -1069,7 +1069,7 @@ img{
     #send-message{
        height: 56%;
         width: 87%;
-        top: 635%;
+        top: 520%;
         left: 6%;
     }
 
@@ -1091,7 +1091,7 @@ img{
         width: 100%;
         height: 32vh;
         position: absolute;
-        top: 710%;
+        top: 590%;
         left: 0%;
         bottom: 0%;
     }
@@ -1130,6 +1130,10 @@ img{
 
     .fa-xmark{
         color: white;
+    }
+    #arrow{
+      right: 5%;  
+      bottom: 5%;
     }
  }
 
