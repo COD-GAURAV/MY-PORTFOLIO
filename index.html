@@ -9,14 +9,27 @@
     <link rel="stylesheet" href="my.css" />
   </head>
   <body>
-   <div class="main-container">
+  
+    
+    <!-- <div class="work">
+      
+    </div>
+    <div class="resume">
+      
+    </div> -->
+    
+    
+    
+    
+    
+    <div id="project">
+      
       <div class="container">
         <div class="photo">
           <img src="gaurav.jpeg" alt="" id="g-photo" class="active">
         </div>
       </div>  
-
-      <div class="container-2">
+      <div id="container-2">
         <div class="menu-bar"> 
            <h1 class="my-heading">My Portfolio</h1>
         </div>
@@ -35,35 +48,21 @@
 
           </div>
         </div>
-        <div id="content">
+  <div class="content"> 
           <div class="name">
-            <h1 class="name" id="name"></h1>
-            <h1 class="name work">A STUDENT OF MCA</h1>
+            <h1 id="name" class="nameV"></h1>
+            <h1 id="status" class="nameV">A STUDENT OF MCA</h1>
             <button class="down" id="Download-1">
               <i class="fa-solid fa-download"></i> Download Resume
             </button>
           </div>
-          <!-- <div class="work">
-                
-            </div>
-            <div class="resume">
-               
-            </div> -->
-        </div>
-      
-
-
-
- <div id="project">
      
       <div id="my-gallery">
         <div class="heading-gallery">
           <h1 class="gallery">MY GALLERY</h1>
-            <div class="photo-1"></div>
-            <div class="photo-2"></div>
-            
-            <div class="photo-4"></div>
-            <div class="photo-5"></div>
+            <div class="photo1">
+              <img src="/photo 5.jpeg" alt="" class="photo-1">
+            </div>
         </div>
       </div>
 
@@ -123,46 +122,6 @@
         </button>
       </div>
 
-      <div id="my-Friends">
-        <h1 class="Repu-heading">My Reputation</h1>
-        <div class="friend-photos f-one">
-          <div class="pho pho-one">
-            
-          </div>
-
-          <div class="name-friends">
-            <h2>JOHN</h2>
-            <p>CEO IN SPAZE IT</p>
-            <p>Gaurav saved us from a web disaster.</p>
-          </div>
-          
-          
-        </div>
-        <div class="friend-photos f-two">
-          <div class="pho pho-two">
-            
-          </div>
-          
-          <div class="name-friends">
-            <h2>LUCIFER</h2>
-            <p>CEO IN SPAZE IT</p>
-            <p>Gaurav saved us from a web disaster.</p>
-          </div>
-
-        </div>
-        <div class="friend-photos f-three">
-          <div class="pho pho-three">
-
-          </div>
-
-          <div class="name-friends">
-            <h2>LINDA</h2>
-            <p>CEO IN SPAZE IT</p>
-            <p>Gaurav saved us from a web disaster.</p>
-          </div>
-
-        </div>
-      </div>
 
       <div id="contact-us"> 
         <div class="contact-heading">
@@ -201,21 +160,24 @@
           Lets get in touch. Send me a message:
         </p>
         <div class="text-name">
+
+          <form id="form">
           <div class="siti">
-            <input type="text" class="input name-input" placeholder="NAME">
+            <input type="text" class="input name-input" placeholder="NAME" id="Name">
           </div>
           <div class="siti">
-            <input type="text" class="input email-input" placeholder="EMAIL">
+            <input type="email" class="input email-input" placeholder="EMAIL" id="email">
           </div>
           <div class="siti">
-            <input type="text" name="" id="" class="input subject-input" placeholder="SUBJECT">
+            <input type="text" name="" id="subject" class="input subject-input" placeholder="SUBJECT" >
           </div>
           <div class="siti">
-            <input type="text" class="input message-input" placeholder="MESSAGE">
+            <textarea name="" id="message" class="input message-input"  placeholder="MESSAGE";></textarea>
           </div>
           <div class="siti">
             <button class=" send-me"><i class="fa-regular fa-paper-plane"></i> SEND MESSAGE </i></button>
           </div>
+          </form>
         </div>
       </div>
 
@@ -239,7 +201,8 @@
  <div id="arrow">
   <i id="upArrow" class="fa-solid fa-angle-up"></i>
  </div>
- </div>
+      </div>
+      </div>
       </div>
    </div>    
     </body>
@@ -374,6 +337,8 @@
 
     const gPhoto = document.getElementById("g-photo")
 
+    const galleryArr = ["photo-1.jpg","photo\ 6.jpeg","photo-4.jpg","photo-5.jpg"]
+
     let backgroundImage = ["gaurav.jpeg","photo\ 5.jpeg","photo-1.jpg"]
 
     let backgroundIndex = 0
@@ -462,6 +427,71 @@
     })
       }
     })
+
+
+    const Name = document.getElementById("Name")
+    const email = document.getElementById("email")
+    const subject = document.getElementById("subject")
+    const message = document.getElementById("message")
+    const form = document.getElementById("form")
+
+    let user = []
+
+    let addUserObject = {
+      name,
+      email,
+      subject,
+      message
+    }
+
+    form.addEventListener("submit",(e)=>{
+      e.preventDefault()
+      if(Name.value === ""){
+        alert("PLEASE ENTER YOU NAME")
+        return
+      }
+      else{
+       
+        addUserObject.name = Name.value
+      }
+
+      if(email.value === ""){
+        alert("PLEASE ENTER YOU EMAIL")
+        return
+      }
+      else{
+       
+        addUserObject.email = email.value
+      }
+
+      if(subject.value === ""){
+        alert("PLEASE ENTER YOU SUBJECT")
+        return
+      }
+      else{
+        
+        addUserObject.subject = subject.value
+      }
+
+      if(message.value === ""){
+        alert("PLEASE ENTER YOU MESSAGE")
+        return
+      }
+      else{
+       
+        addUserObject.message = message.value
+      }
+
+      user.push(addUserObject)
+      console.log(user)
+      Name.value = ""
+      email.value = ""
+      subject.value = ""
+      message.value = ""
+    })
+
+     
+
 
     </script>
 </html>
